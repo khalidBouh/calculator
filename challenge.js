@@ -1,17 +1,22 @@
 // Good Luck! You got this 💪🏾
 // Write your code here.
 function calculator (num1, num2, operator){
-    return num1 , num2 , operator
+    if (operator === "+"){
+        return num1+num2;
+    } else if (operator === "-"){
+        return num1-num2;
+    }else if (operator === "*"){
+        return num1*num2;
+    }else if (operator === "/"){
+        return num1/num2;
+    } else { 
+        return "Invalid Operator"
+    }
 }
-if (operator === "*"){
-    console.log(num1+num2===operator)
-} else if (operator === "-"){
-    console.log(num1-num2)
-} else if (operator === "*"){
-    console.log(num1*num2)
-}else if (operator === "/"){
-    console.log(num1/num2)
-}
-calculator(1, 2 , "+")
-calculator(1, 2 , "-")
-calculator(1, 2 , "/")
+
+console.log(calculator(2,3, "-"))
+console.log(calculator(2,3, "/"))
+console.log(calculator(2,3, "*"))
+console.log(calculator(2,3, "+"))
+
+
